@@ -18,7 +18,7 @@ outros videos TCU: https://www.youtube.com/user/TCUoficial/videos
 
 
 Programação do dia 10 de setembro
---------------------
+====================
 
 1o dia, vídeo completo:
 https://www.youtube.com/watch?v=uNR-5ThcDnY
@@ -35,18 +35,18 @@ Solenidade de abertura
 Painel: Análise de dados como ferramenta estratégica para o Controle
 --------------------
 
-10h40 - 11h10  
-A visão do Tribunal de Contas da União  
-Palestra 2 - Aroldo Cedraz (TCU) - https://www.youtube.com/watch?v=tI1Jw1lU6nU&index=9&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M  
-Palestra 3 - Wesley Vaz (TCU) (11h10-11h40) - https://www.youtube.com/watch?v=GPFr-ayN_F0&index=11&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
-
-11h10 - 11h40  
-A visão da Controladoria-Geral da União  
-Palestra 1 - Valdir Simão (CGU) https://www.youtube.com/watch?v=1sSJqlIABxc&index=10&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M  
-Palestra 4 - Gilson Libório (CGU) (10h40-11h10) https://www.youtube.com/watch?v=MsE7_k1u--s&index=12&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
+10h40 - 11h10 / 11h10 - 11h40  
+Palestra 1 - Valdir Simão (CGU) - A visão da Controladoria-Geral da União  
+https://www.youtube.com/watch?v=1sSJqlIABxc&index=10&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M  
+Palestra 2 - Aroldo Cedraz (TCU) - A visão do Tribunal de Contas da União  
+https://www.youtube.com/watch?v=tI1Jw1lU6nU&index=9&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M  
+Palestra 3 - Wesley Vaz (TCU) (11h10-11h40)  
+https://www.youtube.com/watch?v=GPFr-ayN_F0&index=11&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M  
+Palestra 4 - Gilson Libório (CGU) (10h40-11h10)  
+https://www.youtube.com/watch?v=MsE7_k1u--s&index=12&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 11h40 - 12h  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Gledson Pompeu Corrêa da Costa (TCU)  
 https://www.youtube.com/watch?v=6kky5WutUcI&index=1&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 
@@ -55,26 +55,27 @@ Painel: Otimização de processos financeiros e tributários
 --------------------
 
 14h30 - 14h50  
-Análise de cobranças suspeitas de consultas médicas utilizando o algoritmo k-means  
+Análise de cobranças suspeitas de consultas médicas utilizando o algoritmo k-means (P5)  
 Tiago P. Hillerman – Mestrado Profissional em Computação Aplicada - Universidade de Brasília  
 https://www.youtube.com/watch?v=Cv5spQa6cJM&index=4&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 14h50 - 15h10  
-Classificação de clientes bancários de baixa renda  
+Classificação de clientes bancários de baixa renda (P6)  
 Felipe Alves Fonseca - Banco do Brasil  
 https://www.youtube.com/watch?v=GdHy16Qi9qc&index=5&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 15h10 - 15h30  
-Algoritmo para classificação de empresas em setores econômicos  
+Algoritmo para classificação de empresas em setores econômicos (P7)  
 Leonardo Teles de Carvalho - Receita Federal do Brasil  
 https://www.youtube.com/watch?v=aPOjMWdpQu0&index=6&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 15h30 - 15h50  
-Mitigação do risco de lavagem de dinheiro  
+Mitigação do risco de lavagem de dinheiro (P8)  
 Clesito Cezar Arcoverde Fechine - Conselho de Controle de Atividades Financeiras
+https://www.youtube.com/watch?v=uuDV_nts3TY&t=55m14s
 
 15h50 - 16h10  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Rommel Novaes Carvalho (CGU)  
 https://www.youtube.com/watch?v=qaqvFW3gMZ0&index=3&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 
@@ -83,27 +84,28 @@ Painel: Análise de textos e dados não estruturados
 --------------------
 
 16h30 - 16h50  
-Classificação automática de denúncias  
+Classificação automática de denúncias (P9)  
 Patrícia Helena Maia Alves de Andrade - Controladoria-Geral da União  
 https://www.youtube.com/watch?v=cJLnErKnlC0&index=7&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 16h50 - 17h10  
-Classificação automatizada de produtos em compras públicas  
+Classificação automatizada de produtos em compras públicas (P10)  
 Thiago Marzagão - Conselho Administrativo de Defesa Econômica  
 https://www.youtube.com/watch?v=XlBifkGweOs&index=8&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 17h10 - 17h30  
-Identificação automática de tipos de pedidos mais frequentes da LAI  
-Rommel Novaes Carvalho - Controladoria-Geral da União
+Identificação automática de tipos de pedidos mais frequentes da LAI (P11)  
+Rommel Novaes Carvalho - Controladoria-Geral da União  
+https://www.youtube.com/watch?v=uuDV_nts3TY&t=2h22m
 
 17h30 - 17h50  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Erick Muzart Fonseca dos Santos  
 https://www.youtube.com/watch?v=ypeg-d0c7xs&index=2&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 
 
 Programação do dia 11 de setembro
---------------------
+====================
 
 
 Painel: Classificação de risco na Administração Pública
