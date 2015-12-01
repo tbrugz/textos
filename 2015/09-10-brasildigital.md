@@ -71,7 +71,7 @@ https://www.youtube.com/watch?v=aPOjMWdpQu0&index=6&list=PLbxUzscxhDnqY_ELT_afMZ
 
 15h30 - 15h50  
 Mitigação do risco de lavagem de dinheiro (P8)  
-Clesito Cezar Arcoverde Fechine - Conselho de Controle de Atividades Financeiras
+Clesito Cezar Arcoverde Fechine - Conselho de Controle de Atividades Financeiras  
 https://www.youtube.com/watch?v=uuDV_nts3TY&t=55m14s
 
 15h50 - 16h10  
@@ -99,7 +99,7 @@ Rommel Novaes Carvalho - Controladoria-Geral da União
 https://www.youtube.com/watch?v=uuDV_nts3TY&t=2h22m
 
 17h30 - 17h50  
-Mesa Redonda / Perguntas e Respostas - (+) Erick Muzart Fonseca dos Santos  
+Mesa Redonda / Perguntas e Respostas - (+) Erick Muzart Fonseca dos Santos (TCU)  
 https://www.youtube.com/watch?v=ypeg-d0c7xs&index=2&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 
@@ -111,71 +111,71 @@ Programação do dia 11 de setembro
 Painel: Classificação de risco na Administração Pública
 --------------------
 10h - 10h20  
-Detecção preventiva de fracionamento de compras  
+Detecção preventiva de fracionamento de compras (P12)  
 Rommel Novaes Carvalho - Controladoria-Geral da União  
 https://www.youtube.com/watch?v=g03QpoG7bhk&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=18
 
 10h20 - 10h40  
-Classificação de risco de transferências voluntárias  
+Classificação de risco de transferências voluntárias (P13)  
 João Batista Rodrigues Fonseca - Tribunal de Contas da União  
 https://www.youtube.com/watch?v=t-sAi8GNBWo&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=19
 
 10h40 - 11h  
-Identificação algorítmica de cartéis  
+Identificação algorítmica de cartéis (P14)  
 Lucas Freire - Conselho Administrativo de Defesa Econômica  
 https://www.youtube.com/watch?v=ULhniOzrZD0&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=20
 
 11h - 11h20  
-Análise de risco nos contratos públicos de infraestrutura rodoviária   
+Análise de risco nos contratos públicos de infraestrutura rodoviária (P15)  
 André Luiz Francisco da Silva Vital - Tribunal de Contas da União  
 https://www.youtube.com/watch?v=drGUixXaRjU&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=21
 
 11h20 - 11h50  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Fabiana Ruas Vieira (TCU)  
 https://www.youtube.com/watch?v=esLQ5ER9lXs&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=16
 
 
 Painel: Análise de créditos, orçamentos e preços
 --------------------
 14h30 - 14h50  
-Uso de mineração de dados e textos para cálculo de preços de referência em compras do governo brasileiro  
+Uso de mineração de dados e textos para cálculo de preços de referência em compras do governo brasileiro (P16)  
 Rommel Novaes Carvalho - Controladoria-Geral da União  
 https://www.youtube.com/watch?v=OpfTuXSh2Hw&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=22
 
 14h50 - 15h10  
-Análise de orçamentos de obras de infraestrutura  
+Análise de orçamentos de obras de infraestrutura (P17)  
 Jedson Freire Passos - Tribunal de Contas da União  
 https://www.youtube.com/watch?v=ozLXuKTNlec&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=23
 
 15h10 - 15h30  
-Construção de modelos preditivos para melhoria na seleção de processos de compensação de crédito tributário  
+Construção de modelos preditivos para melhoria na seleção de processos de compensação de crédito tributário (P18)  
 Leon Sólon da Silva - Secretaria da Receita Federal do Brasil  
 https://www.youtube.com/watch?v=pcty3rtMYkY&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=24
 
 15h30 - 15h50  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Markus Buhatem Koch (TCU)  
 https://www.youtube.com/watch?v=ziaCZW91cG4&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=15
 
 
 Painel: Relacionamentos e riscos na Administração Pública
 --------------------
 16h10 - 16h30  
-Filiação partidária e risco de corrupção de servidores públicos federais  
+Filiação partidária e risco de corrupção de servidores públicos federais (P19)  
 Ricardo Silva Carvalho - Controladoria-Geral da União  
 https://www.youtube.com/watch?v=BOTDh-gl7-M&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=25
 
 16h30 - 16h50  
-Um modelo bayesiano de análise de risco de conluio na relação UG x Fornecedor  
+Um modelo bayesiano de análise de risco de conluio na relação UG x Fornecedor (P20)  
 Remis Balaniuk - Tribunal de Contas da União  
 https://www.youtube.com/watch?v=23WLCwgFXDA&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=26
 
 16h50 - 17h10  
-Busca de vínculos na Administração Pública  
+Busca de vínculos na Administração Pública (P21)  
 Gustavo Cordeiro Galvão Van Erven – CGU e Markus Buhatem Koch – TCU  
 https://www.youtube.com/watch?v=IFZeTBwcPZE&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=27
 
 17h10 - 17h30  
-Perguntas e Respostas  
+Mesa Redonda / Perguntas e Respostas - (+) Patrícia Helena Maia Alves de Andrade (CGU)  
 https://www.youtube.com/watch?v=XysPkLrobz8&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=17
 
 Encerramento
