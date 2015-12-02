@@ -12,6 +12,8 @@ http://www.brasildigital.gov.br/
 
 agenda: http://www.brasildigital.gov.br/main.jsp?lumChannelId=8A8182A24F4D640D014F516D8A36063D
 
+programação detalhada (PDF): http://www.brasildigital.gov.br/lumis/portal/file/fileDownload.jsp?fileId=8A8182A24F99F813014FB417BC8853A9
+
 playlist: https://www.youtube.com/playlist?list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M
 
 outros videos TCU: https://www.youtube.com/user/TCUoficial/videos
@@ -23,9 +25,9 @@ Programação do dia 10 de setembro
 1o dia, vídeo completo:
 https://www.youtube.com/watch?v=uNR-5ThcDnY
 
-1o dia, manha:
+1o dia, manha (vídeo completo):  
 https://www.youtube.com/watch?v=PtANYkzWC9o&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=14  
-1o dia, tarde:
+1o dia, tarde (vídeo completo):  
 https://www.youtube.com/watch?v=uuDV_nts3TY&list=PLbxUzscxhDnqY_ELT_afMZJnCyAHSD28M&index=13
 
 10h - 10h40  
