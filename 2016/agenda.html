@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FISL agenda</title>
+<style>
+body {
+	font-family: sans-serif;
+	font-size: x-small;
+}
+table {
+	border-collapse: collapse;
+}
+tr {
+}
+td {
+	border: 1px solid #ccc;
+}
+.title {
+	display: block;
+}
+.owner {
+	display: block;
+	font-weight: bold;
+}
+.track {
+	display: block;
+}
+.video {
+	margin-right: 4px;
+}
+</style>
+<script>
+var API_HOST = 'https://segue-api.softwarelivre.org';
+var API_PATH = '/api';
+var EVENT_DAYS = ["2016-07-13","2016-07-14","2016-07-15","2016-07-16"];
+var HOURS = [ 9,10,11,12,13,14,15,16,17,18,19 ];
+
+var byId = function (id) { return document.getElementById(id); }
+
+function getParameterByName(name, queryString) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(queryString);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g," "));
+}
+
+var dayIndex = getParameterByName('dayIndex', location.search);
+if(! dayIndex) {
+	dayIndex = 0;
+}
+//var dayIndex = 1;
+var day = EVENT_DAYS[dayIndex];
+var dayParam = getParameterByName('day', location.search);
+if(dayParam) {
+	day = dayparam;
+} 
+
+//https://segue-api.softwarelivre.org/api/rooms
+//var rooms = "rooms";
+var rooms = null;
+
+// https://segue-api.softwarelivre.org/api/rooms/1/slots/of-day/2016-07-13
+
+function loadRooms() {
+	var url = API_HOST+API_PATH+"/rooms";
+	
+	var oReq = new XMLHttpRequest();
+	oReq.addEventListener("load", function(evt) {
+		rooms = JSON.parse(evt.target.response);
+		console.log('rooms loaded');
+		createRows();
+	});
+	oReq.open("GET", url);
+	oReq.send();
+	document.title += " - "+day;
+}
+
+function loadTalks(roomId) {
+	var url = API_HOST+API_PATH+"/rooms/"+roomId+"/slots/of-day/"+day;
+	
+	var oReq = new XMLHttpRequest();
+	oReq.addEventListener("load", function(evt) {
+		talks = JSON.parse(evt.target.response);
+		console.log('talks '+roomId+' loaded');
+		createTalks(roomId, talks);
+	});
+	oReq.open("GET", url);
+	oReq.send();
+}
+
+function createHeaderRow() {
+	var t = byId('agenda');
+	var str = "<tr><th>Sala</th>";
+	for(var i=0;i<HOURS.length;i++) {
+		str += "<th>"+HOURS[i]+":00</th>";
+		str += "<th>"+HOURS[i]+":20</th>";
+		str += "<th>"+HOURS[i]+":40</th>";
+	}
+	t.innerHTML += str+"</tr>"
+}
+
+function createRows() {
+	var t = byId('agenda');
+	for(var i=0;i<rooms.count;i++) {
+		t.innerHTML += "<tr id='room"+rooms.items[i].id+"'><th>"+rooms.items[i].name+"</th></tr>";
+	}
+	
+	for(var i=0;i<rooms.count;i++) {
+		loadTalks(rooms.items[i].id);
+	}
+}
+
+function createTalks(roomId, talks) {
+	var t = byId('agenda');
+	var r = byId('room'+roomId);
+	console.log(roomId, talks);
+
+	for(var i=0;i<talks.count;i++) {
+		var td = document.createElement("td");
+		if(talks.items[i].talk) {
+			td.innerHTML = "<span class='title'>"+talks.items[i].talk.title+"</span>" +
+				"<span class='owner'>"+talks.items[i].talk.owner+"</span>" +
+				"<span class='track'>"+talks.items[i].talk.track+"</span>";
+		}
+		else {
+			td.innerHTML = ' - ';
+		}
+		for(var j=0;j<talks.items[i].recordings.length;j++) {
+			td.innerHTML += "<span class='video'><a href='"+talks.items[i].recordings[j]+"'>"+j+"</a></span>";
+		}
+
+		var cols = talks.items[i].duration / 20;
+		td.setAttribute('colspan', cols);
+		r.appendChild(td);
+	}
+}
+
+//--------------------------
+
+</script>
+</head>
+<body>
+<table id="agenda">
+</table>
+<script>
+	createHeaderRow();
+	loadRooms();
+</script>
+</body>
+</html>
