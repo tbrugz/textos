@@ -47,6 +47,12 @@ td {
 .links a {
 	padding: 0 3px 0 3px;
 }
+.closeBtn {
+	float: right;
+	cursor: pointer;
+	background-color: #ccc;
+	padding: 2px;
+}
 #nav {
 	position: fixed;
 	background-color: #ccc;
@@ -60,6 +66,7 @@ td {
 #agenda {
 	position: relative;
 	margin-top: 3px;
+	right: 1px;
 }
 #talk-container {
 	display: none;
@@ -73,6 +80,14 @@ td {
 	z-index: 90;
 }
 
+@media print {
+	#nav {
+		position: absolute;
+	}
+	#nav .links {
+		display: none;
+	}
+}
 </style>
 <script>
 var API_HOST = 'https://segue-api.softwarelivre.org';
@@ -92,6 +107,8 @@ function getParameterByName(name, queryString) {
 	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g," "));
 }
 
+// --- carregando variaveis
+
 var dayIndex = getParameterByName('dayIndex', location.search);
 if(! dayIndex) {
 	dayIndex = 0;
@@ -106,6 +123,7 @@ if(dayParam) {
 //https://segue-api.softwarelivre.org/api/rooms
 //var rooms = "rooms";
 var rooms = null;
+var roomsLoaded = 0;
 
 // https://segue-api.softwarelivre.org/api/rooms/1/slots/of-day/2016-07-13
 
@@ -184,6 +202,15 @@ function createTalks(roomId, talks) {
 		td.setAttribute('colspan', cols);
 		r.appendChild(td);
 	}
+	roomsLoaded++;
+	
+	if(roomsLoaded==rooms.count) {
+		console.log('all rooms loaded...');
+		if(location.hash.length>0) {
+			var talkId = location.hash.substring(1);
+			showTalk(talkId);
+		}
+	}
 }
 
 function showTalk(talkId) {
@@ -231,7 +258,7 @@ function hideTalk() {
 	<table id="agenda">
 	</table>
 	<div id="talk-container">
-		<span style="float: right; cursor: pointer;" onclick="hideTalk()">close</span>
+		<span class="closeBtn" onclick="hideTalk()">close</span>
 		<div id="talkinfo">
 		</div>
 	</div>
