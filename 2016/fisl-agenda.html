@@ -43,10 +43,20 @@ td {
 .links {
 	font-size: small;
 	float: right;
+	padding: 1px;
 }
 .links a {
 	padding: 0 3px 0 3px;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding: 5px;
 }
+.links a:VISITED {
+}
+.links .current {
+	background-color: #eee;
+} 
 .closeBtn {
 	float: right;
 	cursor: pointer;
@@ -88,6 +98,39 @@ td {
 		display: none;
 	}
 }
+
+/* ---------- */
+
+/*
+.topicos_emergentes__dados_abertos { background-color: #DDDDDD; }
+.ecossistema__cultura__filosofia__e_politica { background-color: #0074D9; }
+.desenvolvimento__gerencia_de_conteudo__cms { background-color: #7FDBFF;}
+.desktop__aplicacoes_desktop { background-color: #39CCCC;}
+.desenvolvimento__ferramentas__metodologias_e_padroes { background-color: #3D9970;}
+.minieventos__mozilla { background-color: #2ECC40;}
+.desenvolvimento__linguagens_de_programacao { background-color: #01FF70;}
+.administracao__sistemas_operacionais { background-color: #FFDC00;}
+.administracao__seguranca { background-color: #FF851B;}
+.topicos_emergentes__cloud_computing { background-color: #FF4136;}
+.topicos_emergentes__internet_das_coisas { background-color: #85144b;}
+.administracao__administracao_de_sistemas { background-color: #F012BE;}
+.topicos_emergentes__hardware_aberto { background-color: #B10DC9;}
+
+.ecossistema__negocios__migracoes_e_casos { background-color: #DDDDDD; }
+.desktop__distribuicoes { background-color: #0074D9;}
+.educacao__robotica { background-color: #7FDBFF;}
+.educacao__educacao { background-color: #39CCCC; }
+.minieventos__drupalcamp_poa { background-color: #3D9970;}
+.topicos_emergentes__maratona_de_startups_livres { background-color: #2ECC40;}
+.encontros_comunitarios__principal { background-color: #01FF70;}
+.administracao__bancos_de_dados { background-color: #FFDC00;}
+.minieventos__pyladies { background-color: #FF851B;}
+.desktop__multimidia { background-color: #FF4136;}
+.topicos_emergentes__privacidade_e_vigilancia { background-color: #85144b;}
+.encontros_comunitarios__wsl { background-color: #F012BE; }
+.educacao__inclusao_digital { background-color: #B10DC9;}
+*/
+
 </style>
 <script>
 var API_HOST = 'https://segue-api.softwarelivre.org';
@@ -106,6 +149,8 @@ function getParameterByName(name, queryString) {
 		results = regex.exec(queryString);
 	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g," "));
 }
+
+var tracks = new Set();
 
 // --- carregando variaveis
 
@@ -189,6 +234,9 @@ function createTalks(roomId, talks) {
 				"<span class='title'>"+talks.items[i].talk.title+"</span>" +
 				"<span class='owner'>"+talks.items[i].talk.owner+"</span>" +
 				"<span class='track'>"+talks.items[i].talk.track+"</span>";
+			var normalTrack = normalize(talks.items[i].talk.track);
+			tracks.add(normalTrack);
+			td.classList.add(normalTrack);
 		}
 		else {
 			//td.innerHTML = ' - ';
@@ -248,6 +296,20 @@ function hideTalk() {
 	history.replaceState(null, null, "#");
 }
 
+function normalize(str) {
+	//return str.toLowerCase().replace(/[ -,]/g, "_").replace(/[^a-z0-9_]/g,'');
+	return accentsTidy(str).replace(/[ -,]/g, "_").replace(/[^a-z0-9_]/g,'');
+}
+
+// http://stackoverflow.com/questions/990904/remove-accents-diacritics-in-a-string-in-javascript
+accentsTidy = function(s) {
+	//var r = s.toLowerCase();
+	//non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
+	//for (i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+	//return r;
+	return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"");
+}
+
 //--------------------------
 
 </script>
@@ -266,7 +328,7 @@ function hideTalk() {
 		byId('nav').innerHTML = FISL_HEADER + ' - ' + day;
 		var links = '';
 		for(var i=0;i<EVENT_DAYS.length;i++) {
-			links += "<a href='?day="+EVENT_DAYS[i]+"'>"+EVENT_DAYS[i]+"</a>";
+			links += "<span class='"+(day==EVENT_DAYS[i]?"current":"")+"'>"+"<a href='?day="+EVENT_DAYS[i]+"'>"+EVENT_DAYS[i]+"</a>"+"</span>";
 		}
 		byId('nav').innerHTML += '<span class="links">' + links + '</span>';
 		byId('agenda').style.top = byId('nav').offsetHeight + 'px';
